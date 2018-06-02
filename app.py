@@ -7,13 +7,14 @@ app = Flask(__name__)
 def homepage():
     the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
     r = requests.get('http://httpbin.org/status/418')
+    r = r.text
 
     return """
     <h1>Hello heroku</h1>
     <p>It is currently {time}.</p>
-    <p>{r}</p>
+    <p>{shits}</p>
 
-    """.format(time=the_time r=r)
+    """.format(time=the_time, shits=r)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
