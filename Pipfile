@@ -1,11 +1,25 @@
 [[source]]
+
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 
+
 [packages]
+
 flask = "*"
+threading = "*"
+json = "*"
+jinja2 = "*"
+os = "*"
+numpy = "*"
+pandas = "*"
+time = "*"
+datetime= "*"
+talib ="*"
 gunicorn = "*"
-requests = "*"
+
+
 
 [requires]
+
 python_version = "3.6"
