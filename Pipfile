@@ -6,14 +6,10 @@ verify_ssl = true
 
 [packages]
 
-flask = "*"
-threading = "*"
-json = "*"
+flask = "*
 jinja2 = "*"
-os = "*"
 numpy = "*"
 pandas = "*"
-time = "*"
 datetime= "*"
 talib ="*"
 gunicorn = "*"
