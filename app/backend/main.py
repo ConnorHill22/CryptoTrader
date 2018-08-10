@@ -3,7 +3,6 @@ import time
 from datetime import datetime
 import pandas as pd
 from indicators import rsiFunc
-import talib
 
 def getData(ticker, interval, startTime):
     try:
