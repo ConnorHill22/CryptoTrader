@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify
 from threading import Thread
 import json
-from main import fiveMin, fifteenMin, oneHour, fourHour, oneDay
+from app.backend.main import fiveMin, fifteenMin, oneHour, fourHour, oneDay
 import os
 
 template_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))

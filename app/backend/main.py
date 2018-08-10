@@ -2,7 +2,7 @@ import json
 import time
 from datetime import datetime
 import pandas as pd
-from indicators import rsiFunc
+from app.backend.indicators import rsiFunc
 
 def getData(ticker, interval, startTime):
     try:
