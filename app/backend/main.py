@@ -45,7 +45,7 @@ def RSIlevel(tickers, periods, interval):
         elif RSInumber < 30 and RSInumber > 0:
             tempList.append({'coin':str(coin),'status':'Over Sold','RSI_Level':str(RSInumber)})
     solution = [{'time': str(currentTime), 'RSI_Triggers': tempList}]
-    json_in = open('data/' + interval + '/RSIstore.json', 'w')
+    json_in = open('app/backend/data/' + interval + '/RSIstore.json', 'w')
     json.dump(solution, json_in)
 
 def fiveMin():
