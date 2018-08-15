@@ -54,7 +54,7 @@ def fiveMin():
         if int(s[14:16])%5 == 0:
             interval = '5m'
             periods = 14
-            json_in = open('pairs/pairsBTC.json', 'r')
+            json_in = open('app/backend/pairs/pairsBTC.json', 'r')
             tickers = json.load(json_in)
             RSIlevel(tickers, periods, interval)
         t = datetime.now()
@@ -67,7 +67,7 @@ def fifteenMin():
         if int(s[14:16])%15 == 0:
             interval = '15m'
             periods = 14
-            json_in = open('pairs/pairsBTC.json', 'r')
+            json_in = open('app/backend/pairs/pairsBTC.json', 'r')
             tickers = json.load(json_in)
             RSIlevel(tickers, periods, interval)
         t = datetime.now()
@@ -80,7 +80,7 @@ def oneHour():
         if s[14:16] == "00":
             interval = '1h'
             periods = 14
-            json_in = open('pairs/pairsBTC.json', 'r')
+            json_in = open('app/backend/pairs/pairsBTC.json', 'r')
             tickers = json.load(json_in)
             RSIlevel(tickers, periods, interval)
         t = datetime.now()
@@ -93,7 +93,7 @@ def fourHour():
         if int(s[11:13])%4 == 0:
             interval = '4h'
             periods = 14
-            json_in = open('pairs/pairsBTC.json', 'r')
+            json_in = open('app/backend/pairs/pairsBTC.json', 'r')
             tickers = json.load(json_in)
             RSIlevel(tickers, periods, interval)
         t = datetime.now()
@@ -106,7 +106,7 @@ def oneDay():
         if s[11:13] == "00":
             interval = '1d'
             periods = 14
-            json_in = open('pairs/pairsBTC.json', 'r')
+            json_in = open('app/backend/pairs/pairsBTC.json', 'r')
             tickers = json.load(json_in)
             RSIlevel(tickers, periods, interval)
         t = datetime.now()
