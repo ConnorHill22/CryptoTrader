@@ -5,8 +5,8 @@ from app.backend.main import fiveMin, fifteenMin, oneHour, fourHour, oneDay
 import os
 
 template_dir = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
-template_dir = os.path.join(template_dir, 'Signals')
-template_dir = os.path.join(template_dir, 'dist')
+template_dir = os.path.join(template_dir, 'app')
+template_dir = os.path.join(template_dir, 'Vue')
 static_dir = os.path.join(template_dir, 'static')
 print(template_dir)
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
