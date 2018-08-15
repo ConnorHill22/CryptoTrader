@@ -61,7 +61,7 @@ def activate_job():
 
 @app.route('/api/<timeFrame>/<indicator>')
 def RSIdata(timeFrame, indicator):
-    file_name = 'data/%s/%s.json' %(timeFrame, indicator)
+    file_name = 'app/backend/data/%s/%s.json' %(timeFrame, indicator)
     json_in = open(file_name, 'r')
     data = json.load(json_in)
     return jsonify(data)
